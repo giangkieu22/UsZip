@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UsZip</title>
+</head>
+<body>
+<script>
+    var regexp;
+    function usZip(str) {
+        regexp = /^[1-9][0-9]{4}(?:-[0-9]{4})?$/;
+        if (regexp.test(str)) {
+
+            return true;
+        }
+        return false;
+    }
+    let x = '10000';
+    alert(usZip(x));
+</script>
+</body>
+</html>
